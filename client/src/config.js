@@ -1,1 +1,1 @@
-export const API = 'https://ddlshop.herokuapp.com/'
+export const API = 'https://ddlshop.herokuapp.com/api'
