@@ -218,7 +218,13 @@ const UpdateProduct = ({ match }) => {
       }
     }
   };
-
+  const goBack = () => (
+    <div className='mt-5'>
+      <Link to='/admin/dashboard' className='text-warning'>
+        Back to Dashboard
+      </Link>
+    </div>
+  );
   return (
     <Layout
       title='Add a new product'
@@ -230,7 +236,7 @@ const UpdateProduct = ({ match }) => {
           {showSuccess()}
           {showError()}
           {newPostForm()}
-          {redirectUser()}
+          {goBack()}
         </div>
       </div>
     </Layout>
